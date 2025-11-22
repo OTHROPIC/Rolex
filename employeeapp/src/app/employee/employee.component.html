@@ -1,0 +1,22 @@
+<!-- Q.1) Write an AngularJS script to print details of Employee (employee name, employee
+Id,Pin code, address etc.) in tabular form using ng-repeat. -->
+
+<div style="max-width:650px;margin:auto;font-family:Arial;">
+  <h3>Employee Details</h3>
+
+  <table border="1" width="100%" cellpadding="8">
+    <tr>
+      <th>Employee Name</th>
+      <th>Employee ID</th>
+      <th>Pin Code</th>
+      <th>Address</th>
+    </tr>
+
+    <tr *ngFor="let e of employees">
+      <td>{{ e.name }}</td>
+      <td>{{ e.id }}</td>
+      <td>{{ e.pincode }}</td>
+      <td>{{ e.address }}</td>
+    </tr>
+  </table>
+</div>
